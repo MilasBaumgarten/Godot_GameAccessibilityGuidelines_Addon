@@ -19,7 +19,7 @@ KeyPersistence="*res://addons/keybindings/key_persistence.gd"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/keybindings/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/keybindings/plugin.cfg", "res://addons/ui_keyboard_navigation/plugin.cfg" )
 
 [gui]
 
