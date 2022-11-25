@@ -1,3 +1,6 @@
 [submodule "addons/keybindings"]
 	path = addons/keybindings
 	url = git@github.com:MilasBaumgarten/keybindings.git
+[submodule "addons/ga_text_to_speech"]
+	path = addons/ga_text_to_speech
+	url = git@github.com:MilasBaumgarten/ga_text_to_speech.git
