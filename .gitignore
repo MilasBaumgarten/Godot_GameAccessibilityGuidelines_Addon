@@ -10,3 +10,4 @@ data_*/
 addons/pythonscript
 pythonscript.gdnlib
 **/__pycache__
+Tests

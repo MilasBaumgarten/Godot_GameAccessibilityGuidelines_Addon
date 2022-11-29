@@ -21,6 +21,9 @@ KeyPersistence="*res://addons/keybindings/key_persistence.gd"
 
 enabled=PoolStringArray( "res://addons/ga_text_to_speech/plugin.cfg", "res://addons/keybindings/plugin.cfg", "res://addons/ui_keyboard_navigation/plugin.cfg" )
 
+[gdnative]
+
+singletons=[ "res://pythonscript.gdnlib" ]
 
 [gui]
 
