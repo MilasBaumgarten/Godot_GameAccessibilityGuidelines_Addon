@@ -16,6 +16,7 @@ config/icon="res://icon.png"
 [autoload]
 
 KeyPersistence="*res://addons/keybindings/key_persistence.gd"
+TTS="*res://addons/ga_text_to_speech/autoload.py"
 
 [editor_plugins]
 
