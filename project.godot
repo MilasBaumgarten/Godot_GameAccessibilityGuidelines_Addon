@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Resource",
+"class": "Input_Settings",
+"language": "GDScript",
+"path": "res://addons/keybindings/resources/input_settings.gd"
+} ]
+_global_script_class_icons={
+"Input_Settings": ""
+}
+
 [application]
 
 config/name="Godot Game Accessibility Guidelines Addon"
@@ -24,6 +34,7 @@ enabled=PoolStringArray( "res://addons/keybindings/plugin.cfg", "res://addons/ui
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+theme/custom_font="res://fonts/default_font.tres"
 
 [input]
 
