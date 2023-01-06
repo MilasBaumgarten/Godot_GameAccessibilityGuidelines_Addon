@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Godot Game Accessibility Guidelines Addon"
-run/main_scene="res://addons/main_menu_example/scenes/main_menu.tscn"
+run/main_scene="res://scenes/main_menu.tscn"
 config/icon="res://icon.png"
 
 [autoload]
@@ -30,7 +30,7 @@ KeyPersistence="*res://addons/keybindings/key_persistence.gd"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/keybindings/plugin.cfg", "res://addons/main_menu_example/plugin.cfg", "res://addons/ui_keyboard_navigation/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/keybindings/plugin.cfg", "res://addons/ui_keyboard_navigation/plugin.cfg" )
 
 [gui]
 
@@ -66,7 +66,7 @@ move_right={
 
 [locale]
 
-translations=PoolStringArray( "res://addons/keybindings/localisation/keybinding_menu_strings.en.translation", "res://addons/main_menu_example/localisation/accessiblity_information_strings.en.translation", "res://addons/main_menu_example/localisation/main_menu_strings.en.translation" )
+translations=PoolStringArray( "res://addons/keybindings/localisation/keybinding_menu_strings.en.translation", "res://localisation/accessiblity_information_strings.en.translation", "res://localisation/main_menu_strings.en.translation" )
 
 [physics]
 

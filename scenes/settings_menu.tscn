@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://addons/main_menu_example/scripts/instance_scene_on_button_press.gd" type="Script" id=1]
-[ext_resource path="res://addons/main_menu_example/scripts/return_from_instanced_scene.gd" type="Script" id=2]
+[ext_resource path="res://scripts/instance_scene_on_button_press.gd" type="Script" id=1]
+[ext_resource path="res://scripts/return_from_instanced_scene.gd" type="Script" id=2]
 [ext_resource path="res://addons/ui_keyboard_navigation/other_grab_focus.gd" type="Script" id=3]
 
 [node name="SettingsMenu" type="Control"]
@@ -28,7 +28,7 @@ margin_right = 179.0
 margin_bottom = 279.0
 text = "MENU_KEYBINDINGS"
 script = ExtResource( 1 )
-scene_path = "res://addons/main_menu_example/scenes/keybinding_menu.tscn"
+scene_path = "res://scenes/keybinding_menu.tscn"
 instance_as_child = true
 
 [node name="Sensitivity" type="Button" parent="Panel/VBoxContainer"]
@@ -37,7 +37,7 @@ margin_right = 179.0
 margin_bottom = 317.0
 text = "MENU_SENSITIVITY"
 script = ExtResource( 1 )
-scene_path = "res://addons/main_menu_example/scenes/input_sensitivity_menu.tscn"
+scene_path = "res://scenes/input_sensitivity_menu.tscn"
 instance_as_child = true
 
 [node name="Accessibility Information" type="Button" parent="Panel/VBoxContainer"]
@@ -46,7 +46,7 @@ margin_right = 179.0
 margin_bottom = 355.0
 text = "MENU_AUDIO"
 script = ExtResource( 1 )
-scene_path = "res://addons/main_menu_example/scenes/audio_mixer_menu.tscn"
+scene_path = "res://scenes/audio_mixer_menu.tscn"
 instance_as_child = true
 
 [node name="ReturnButton" type="Button" parent="Panel"]

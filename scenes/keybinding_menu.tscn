@@ -1,8 +1,9 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://addons/keybindings/keybinding_menu.tscn" type="PackedScene" id=1]
-[ext_resource path="res://addons/main_menu_example/scripts/return_from_instanced_scene.gd" type="Script" id=2]
+[ext_resource path="res://scripts/return_from_instanced_scene.gd" type="Script" id=2]
 [ext_resource path="res://addons/ui_keyboard_navigation/other_grab_focus.gd" type="Script" id=3]
+
 
 [node name="KeybindingMenu" instance=ExtResource( 1 )]
 script = ExtResource( 3 )
