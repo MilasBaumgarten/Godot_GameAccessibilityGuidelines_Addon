@@ -3,7 +3,7 @@ extends Slider
 
 export var bus_name: String = "Master"
 
-export var audio_duration_after_drag_ended: float = 2.0
+export var audio_duration_after_drag_ended: float = 0.5
 export(NodePath) var example_audio_path
 onready var example_audio = get_node(example_audio_path)
 
@@ -13,6 +13,10 @@ var timer: SceneTreeTimer
 
 func _ready():
     bus_index = AudioServer.get_bus_index(bus_name)
+    
+    assert(bus_index != -1, "No bus with the given name: " + bus_name + " exists!" +
+    "\nObject: " + self.name + 
+    "\nScene: " + get_tree().current_scene.get_name())
     
     var converted_val = pow(10, AudioServer.get_bus_volume_db(bus_index) / 20)
     self.value = converted_val
@@ -48,5 +52,4 @@ func _on_drag_ended(value_changed: bool):
     timer.connect("timeout", self, "_on_timeout")
 
 func _on_timeout():
-    print("STOP")
     example_audio.stop()
