@@ -4,10 +4,7 @@
 [ext_resource path="res://scripts/return_from_instanced_scene.gd" type="Script" id=2]
 [ext_resource path="res://addons/ui_keyboard_navigation/other_grab_focus.gd" type="Script" id=3]
 
-
 [node name="KeybindingMenu" instance=ExtResource( 1 )]
-script = ExtResource( 3 )
-ui_element_path = NodePath("Panel/CenterContainer/HBoxContainer/ButtonsContainer/MoveForwardsContainer/Button")
 
 [node name="ReturnButton" type="Button" parent="." index="1"]
 anchor_left = 1.0
@@ -17,3 +14,7 @@ margin_bottom = 34.0
 grow_horizontal = 0
 text = "MENU_RETURN"
 script = ExtResource( 2 )
+
+[node name="Node" type="Node" parent="ReturnButton" index="0"]
+script = ExtResource( 3 )
+ui_element_path = NodePath("..")

@@ -1,4 +1,4 @@
-extends Control
+extends Node
 
 
 export(NodePath) var ui_element_path

@@ -20,12 +20,16 @@ anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = -56.0
 margin_right = 56.0
+grow_horizontal = 2
+grow_vertical = 2
 alignment = 1
 
 [node name="Keybindings" type="Button" parent="Panel/VBoxContainer"]
-margin_top = 245.0
-margin_right = 179.0
+margin_top = 246.0
+margin_right = 266.0
 margin_bottom = 279.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "MENU_KEYBINDINGS"
 script = ExtResource( 1 )
 scene_path = "res://scenes/keybinding_menu.tscn"
@@ -33,17 +37,21 @@ instance_as_child = true
 
 [node name="Sensitivity" type="Button" parent="Panel/VBoxContainer"]
 margin_top = 283.0
-margin_right = 179.0
-margin_bottom = 317.0
+margin_right = 266.0
+margin_bottom = 316.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "MENU_SENSITIVITY"
 script = ExtResource( 1 )
 scene_path = "res://scenes/input_sensitivity_menu.tscn"
 instance_as_child = true
 
 [node name="Accessibility Information" type="Button" parent="Panel/VBoxContainer"]
-margin_top = 321.0
-margin_right = 179.0
-margin_bottom = 355.0
+margin_top = 320.0
+margin_right = 266.0
+margin_bottom = 353.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "MENU_AUDIO"
 script = ExtResource( 1 )
 scene_path = "res://scenes/audio_mixer_menu.tscn"

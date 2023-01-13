@@ -19,29 +19,37 @@ anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = -110.5
 margin_right = 110.5
+grow_horizontal = 2
+grow_vertical = 2
 alignment = 1
 
 [node name="Start Game" type="Button" parent="Panel/VBoxContainer"]
-margin_top = 245.0
-margin_right = 319.0
+margin_top = 246.0
+margin_right = 490.0
 margin_bottom = 279.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "MENU_START_GAME"
 script = ExtResource( 2 )
 scene_path = "res://game.tscn"
 
 [node name="Settings" type="Button" parent="Panel/VBoxContainer"]
 margin_top = 283.0
-margin_right = 319.0
-margin_bottom = 317.0
+margin_right = 490.0
+margin_bottom = 316.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "MENU_SETTINGS"
 script = ExtResource( 2 )
 scene_path = "res://scenes/settings_menu.tscn"
 instance_as_child = true
 
 [node name="Accessibility Information" type="Button" parent="Panel/VBoxContainer"]
-margin_top = 321.0
-margin_right = 319.0
-margin_bottom = 355.0
+margin_top = 320.0
+margin_right = 490.0
+margin_bottom = 353.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "MENU_ACCESSIBILITY_INFORMATION"
 script = ExtResource( 2 )
 scene_path = "res://scenes/accessibility_information.tscn"
