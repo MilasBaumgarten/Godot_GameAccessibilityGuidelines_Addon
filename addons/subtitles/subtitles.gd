@@ -1,13 +1,14 @@
 extends Node
 
 
+const text_show_time = 3.0
+
 const subtitle_asset = preload("res://addons/subtitles/scenes/subtitle_asset.tscn")
 var subtitle_instance: Node
 var subtitle_label: Label
 
 var queue = PoolStringArray()
 
-var timer: SceneTreeTimer
 var is_idle: bool = true
 
 
@@ -24,21 +25,19 @@ func _ready():
 
 func _process(delta):
     # process the queue if entries exist
-    if queue.size() > 0 && is_idle:
+    if queue.size() > 0 and is_idle == true:
         subtitle_instance.show()
         
         var element = _pop_from_queue()
         print(element +  "\tleft: " + str(queue.size()))
         subtitle_label.text = element
         
-        # "stop" the currently running timer, to continue playing audio while
-        # changing the volume
-        if timer:
-            if timer.is_connected("timeout", self, "_on_timeout"):
-                timer.disconnect("timeout", self, "_on_timeout")
-        timer = get_tree().create_timer(3)
-        timer.connect("timeout", self, "_on_timeout")
         is_idle = false
+        yield(get_tree().create_timer(text_show_time), "timeout")
+        
+        # hide subtitles
+        subtitle_instance.hide()
+        is_idle = true
 
 
 func add_to_queue(value: String):
@@ -52,10 +51,3 @@ func _pop_from_queue() -> String:
         return element
     else:
         return ""
-
-
-func _on_timeout():
-    is_idle = true
-    
-    # hide subtitles
-    subtitle_instance.hide()
