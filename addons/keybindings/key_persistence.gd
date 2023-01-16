@@ -12,6 +12,8 @@ func _ready() -> void:
     for action in InputMap.get_actions():
         if InputMap.get_action_list(action).size() > 0:
             keymaps[action] = InputMap.get_action_list(action)[0]
+        else:
+            keymaps[action] = ""
     load_keymap()
 
 
@@ -35,8 +37,15 @@ func load_keymap() -> void:
             keymaps[action] = temp_keymap[action]
             # Whilst setting the keymap dictionary, we also set the
             # correct InputMap event
+            
             InputMap.action_erase_events(action)
-            InputMap.action_add_event(action, keymaps[action])
+            # check that the keymap value is not a string (aka: "") (should be an object)
+            if typeof(keymaps[action]) != 4:
+                InputMap.action_add_event(action, keymaps[action])
+            else:
+                print(str(action) + " is unbound.")
+        else:
+            print(str(action) + " is missing.")
 
 
 func save_keymap() -> void:
