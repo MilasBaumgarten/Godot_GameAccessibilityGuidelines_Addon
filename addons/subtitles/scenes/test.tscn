@@ -1,0 +1,71 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/subtitles/subtitle_adder.gd" type="Script" id=2]
+
+[node name="Control" type="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -300.0
+margin_right = 512.0
+margin_bottom = 300.0
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="CenterContainer" type="CenterContainer" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/CenterContainer"]
+margin_left = 420.0
+margin_top = 249.0
+margin_right = 604.0
+margin_bottom = 350.0
+alignment = 1
+
+[node name="Label" type="Label" parent="Panel/CenterContainer/VBoxContainer"]
+margin_right = 184.0
+margin_bottom = 27.0
+text = "Enqueue:"
+align = 1
+
+[node name="GridContainer" type="GridContainer" parent="Panel/CenterContainer/VBoxContainer"]
+margin_top = 31.0
+margin_right = 184.0
+margin_bottom = 101.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 2
+
+[node name="Button" type="Button" parent="Panel/CenterContainer/VBoxContainer/GridContainer"]
+margin_right = 90.0
+margin_bottom = 33.0
+text = "Hello"
+script = ExtResource( 2 )
+
+[node name="Button2" type="Button" parent="Panel/CenterContainer/VBoxContainer/GridContainer"]
+margin_left = 94.0
+margin_right = 184.0
+margin_bottom = 33.0
+text = "World"
+script = ExtResource( 2 )
+
+[node name="Button3" type="Button" parent="Panel/CenterContainer/VBoxContainer/GridContainer"]
+margin_top = 37.0
+margin_right = 90.0
+margin_bottom = 70.0
+text = "1"
+script = ExtResource( 2 )
+
+[node name="Button4" type="Button" parent="Panel/CenterContainer/VBoxContainer/GridContainer"]
+margin_left = 94.0
+margin_top = 37.0
+margin_right = 184.0
+margin_bottom = 70.0
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales lacus ipsum, eu luctus ante viverra sit amet. Proin fermentum hendrerit purus. Ut sed posuere turpis. Vivamus eget sagittis augue."
+clip_text = true
+script = ExtResource( 2 )
