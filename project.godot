@@ -27,11 +27,10 @@ config/icon="res://icon.png"
 [autoload]
 
 KeyPersistence="*res://addons/keybindings/key_persistence.gd"
-Subtitles="*res://addons/subtitles/subtitles.gd"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/keybindings/plugin.cfg", "res://addons/subtitles/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/keybindings/plugin.cfg" )
 
 [gui]
 
