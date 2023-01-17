@@ -4,6 +4,7 @@ extends Node
 
 const keymaps_path = "user://keymaps.dat"
 var keymaps: Dictionary
+var keymaps_backup: Dictionary
 
 
 func _ready() -> void:
@@ -14,6 +15,8 @@ func _ready() -> void:
             keymaps[action] = InputMap.get_action_list(action)[0]
         else:
             keymaps[action] = ""
+    
+    keymaps_backup = keymaps.duplicate()
     load_keymap()
 
 
@@ -28,24 +31,7 @@ func load_keymap() -> void:
     var temp_keymap: Dictionary = file.get_var(true)
     file.close()
     
-    # We don't just replace the keymaps dictionary, because if you
-    # updated your game and removed/added keymaps, the data of this
-    # save file may have invalid actions. So we check one by one to
-    # make sure that the keymap dictionary really has all current actions.
-    for action in keymaps.keys():
-        if temp_keymap.has(action):
-            keymaps[action] = temp_keymap[action]
-            # Whilst setting the keymap dictionary, we also set the
-            # correct InputMap event
-            
-            InputMap.action_erase_events(action)
-            # check that the keymap value is not a string (aka: "") (should be an object)
-            if typeof(keymaps[action]) != 4:
-                InputMap.action_add_event(action, keymaps[action])
-            else:
-                print(str(action) + " is unbound.")
-        else:
-            print(str(action) + " is missing.")
+    _set_actions(temp_keymap)
 
 
 func save_keymap() -> void:
@@ -55,3 +41,25 @@ func save_keymap() -> void:
     file.open(keymaps_path, File.WRITE)
     file.store_var(keymaps, true)
     file.close()
+
+
+func reset_keymap() -> void:
+    _set_actions(keymaps_backup)
+    save_keymap()
+
+
+func _set_actions(new_values: Dictionary):
+    for action in keymaps.keys():
+        if new_values.has(action):
+            # Whilst setting the keymap dictionary, we also set the
+            # correct InputMap event
+            keymaps[action] = new_values[action]
+            InputMap.action_erase_events(action)
+            # check that the keymap value is not a string (aka: "") (should be an object)
+            if typeof(keymaps[action]) != 4:
+                InputMap.action_add_event(action, keymaps[action])
+#                print(str(action) + " - " + keymaps[action].as_text())
+            else:
+                print(str(action) + " is unbound.")
+        else:
+            print(str(action) + " is missing.")
