@@ -18,7 +18,7 @@ func _ready():
 
 func _update_visualization():
     if settings:
-        label.text = "Sensitivity: " + \
+        label.text = tr("SENSITIVITY_TITLE") +  " " + \
         str(settings.mouse_horizontal_sensitivity) + \
         " | " + \
         str(settings.mouse_vertical_sensitivity)
