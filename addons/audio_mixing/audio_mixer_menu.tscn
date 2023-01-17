@@ -19,8 +19,8 @@ grow_vertical = 2
 alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel/HBoxContainer"]
-margin_left = 330.0
-margin_right = 540.0
+margin_left = 284.0
+margin_right = 586.0
 margin_bottom = 600.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -28,39 +28,39 @@ alignment = 1
 
 [node name="Label" type="Label" parent="Panel/HBoxContainer/VBoxContainer"]
 margin_top = 240.0
-margin_right = 210.0
+margin_right = 302.0
 margin_bottom = 267.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Master Volume"
+text = "AUDIO_MASTER_VOLUME"
 
 [node name="Label2" type="Label" parent="Panel/HBoxContainer/VBoxContainer"]
 margin_top = 271.0
-margin_right = 210.0
+margin_right = 302.0
 margin_bottom = 298.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Music Volume"
+text = "AUDIO_MUSIC_VOLUME"
 
 [node name="Label3" type="Label" parent="Panel/HBoxContainer/VBoxContainer"]
 margin_top = 302.0
-margin_right = 210.0
+margin_right = 302.0
 margin_bottom = 329.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "SFX Volume"
+text = "AUDIO_SFX_VOLUME"
 
 [node name="Label4" type="Label" parent="Panel/HBoxContainer/VBoxContainer"]
 margin_top = 333.0
-margin_right = 210.0
+margin_right = 302.0
 margin_bottom = 360.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Voice Volume"
+text = "AUDIO_VOICE_VOLUME"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="Panel/HBoxContainer"]
-margin_left = 544.0
-margin_right = 694.0
+margin_left = 590.0
+margin_right = 740.0
 margin_bottom = 600.0
 grow_horizontal = 2
 grow_vertical = 2

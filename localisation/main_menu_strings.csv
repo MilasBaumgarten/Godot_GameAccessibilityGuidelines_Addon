@@ -1,8 +1,9 @@
-id,en
-MENU_START_GAME, Start Game
-MENU_SETTINGS, Settings
-MENU_ACCESSIBILITY_INFORMATION, Accessibility Information
-MENU_RETURN, Return
-MENU_KEYBINDINGS, Keybindings
-MENU_SENSITIVITY, Sensitivity
-MENU_AUDIO, Audio
+id,en,de
+MENU_START_GAME, Start Game, Spiel starten
+MENU_SETTINGS, Settings, Einstellungen
+MENU_ACCESSIBILITY_INFORMATION, Accessibility Information, Barrierefreiheitsinformationen
+MENU_RETURN, Return, Zurück
+MENU_KEYBINDINGS, Keybindings, Tastenbelegungen
+MENU_SENSITIVITY, Sensitivity, Empfindlichkeit
+MENU_AUDIO, Audio, Lautstärke
+MENU_LANGUAGE, Language, Sprache

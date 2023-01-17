@@ -1,0 +1,5 @@
+id,en,de
+AUDIO_MASTER_VOLUME, Master Volume, Gesamtlautstärke
+AUDIO_MUSIC_VOLUME, Music Volume, Musiklautstärke
+AUDIO_SFX_VOLUME, SFX Volume, Effektlautstärke
+AUDIO_VOICE_VOLUME, Voice Volume, Sprachlautstärke
