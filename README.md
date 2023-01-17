@@ -13,5 +13,9 @@ The features are mostly implemented in addons. Also please read the Readme files
 - seperate volume controls are provided for effects, speech, background and music
 - information about the implemented accessibility features is provided to the user
 
+## Notes
+- for different UI elements (e.g. ingame UI), the "ui_theme" might have to be reaplied
+  - otherwise the separation of elements might be too small
+
 ## Other
 Feedback: milasbaumgarten@gmail.com
