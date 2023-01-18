@@ -9,10 +9,12 @@ func _ready():
 
 
 func _toggled(button_pressed):
+    # wait one frame, this will stop ui_accept from instandly setting the keybinding
+    yield(get_tree(), "idle_frame")
+    
     set_process_unhandled_key_input(button_pressed)
     if button_pressed:
         text = "... Key"
-        release_focus()
     else:
         display_current_key()
 
