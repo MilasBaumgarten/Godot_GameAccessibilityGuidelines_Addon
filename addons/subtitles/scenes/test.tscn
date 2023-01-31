@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=6 format=2]
 
+[ext_resource path="res://addons/subtitles/tests/add_remove.gd" type="Script" id=1]
 [ext_resource path="res://addons/subtitles/subtitle_adder.gd" type="Script" id=2]
+[ext_resource path="res://addons/subtitles/tests/rotating.gd" type="Script" id=3]
+[ext_resource path="res://addons/subtitles/tests/dict.gd" type="Script" id=4]
+[ext_resource path="res://addons/subtitles/tests/flip.gd" type="Script" id=5]
 
 [node name="Control" type="Control"]
 anchor_left = 0.5
@@ -21,51 +25,88 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel/CenterContainer"]
-margin_left = 420.0
-margin_top = 249.0
-margin_right = 604.0
-margin_bottom = 350.0
+margin_left = 244.0
+margin_top = 175.0
+margin_right = 780.0
+margin_bottom = 424.0
 alignment = 1
 
 [node name="Label" type="Label" parent="Panel/CenterContainer/VBoxContainer"]
-margin_right = 184.0
+margin_right = 536.0
 margin_bottom = 27.0
 text = "Enqueue:"
 align = 1
 
 [node name="GridContainer" type="GridContainer" parent="Panel/CenterContainer/VBoxContainer"]
 margin_top = 31.0
-margin_right = 184.0
+margin_right = 536.0
 margin_bottom = 101.0
 grow_horizontal = 2
 grow_vertical = 2
 columns = 2
 
 [node name="Button" type="Button" parent="Panel/CenterContainer/VBoxContainer/GridContainer"]
-margin_right = 90.0
+margin_right = 266.0
 margin_bottom = 33.0
-text = "Hello"
+text = "SUB_BUTTON_HELLO"
 script = ExtResource( 2 )
+content_identifier_string = "SUB_CONTENT_HELLO"
 
 [node name="Button2" type="Button" parent="Panel/CenterContainer/VBoxContainer/GridContainer"]
-margin_left = 94.0
-margin_right = 184.0
+margin_left = 270.0
+margin_right = 536.0
 margin_bottom = 33.0
-text = "World"
+text = "SUB_BUTTON_WORLD"
 script = ExtResource( 2 )
+content_identifier_string = "SUB_CONTENT_WORLD"
 
 [node name="Button3" type="Button" parent="Panel/CenterContainer/VBoxContainer/GridContainer"]
 margin_top = 37.0
-margin_right = 90.0
+margin_right = 266.0
 margin_bottom = 70.0
-text = "1"
+text = "SUB_BUTTON_1"
 script = ExtResource( 2 )
+content_identifier_string = "SUB_CONTENT_1"
+duration = 1.0
 
 [node name="Button4" type="Button" parent="Panel/CenterContainer/VBoxContainer/GridContainer"]
-margin_left = 94.0
+margin_left = 270.0
 margin_top = 37.0
-margin_right = 184.0
+margin_right = 536.0
 margin_bottom = 70.0
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales lacus ipsum, eu luctus ante viverra sit amet. Proin fermentum hendrerit purus. Ut sed posuere turpis. Vivamus eget sagittis augue."
-clip_text = true
+text = "SUB_BUTTON_LONG"
 script = ExtResource( 2 )
+content_identifier_string = "SUB_CONTENT_LONG"
+duration = 4.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/CenterContainer/VBoxContainer"]
+margin_top = 105.0
+margin_right = 536.0
+margin_bottom = 249.0
+
+[node name="Button5" type="Button" parent="Panel/CenterContainer/VBoxContainer/VBoxContainer"]
+margin_right = 536.0
+margin_bottom = 33.0
+text = "Test normal adding removing"
+script = ExtResource( 1 )
+
+[node name="Button6" type="Button" parent="Panel/CenterContainer/VBoxContainer/VBoxContainer"]
+margin_top = 37.0
+margin_right = 536.0
+margin_bottom = 70.0
+text = "Test rotating"
+script = ExtResource( 3 )
+
+[node name="Button7" type="Button" parent="Panel/CenterContainer/VBoxContainer/VBoxContainer"]
+margin_top = 74.0
+margin_right = 536.0
+margin_bottom = 107.0
+text = "Test Dict"
+script = ExtResource( 4 )
+
+[node name="Button8" type="Button" parent="Panel/CenterContainer/VBoxContainer/VBoxContainer"]
+margin_top = 111.0
+margin_right = 536.0
+margin_bottom = 144.0
+text = "Test Invert"
+script = ExtResource( 5 )

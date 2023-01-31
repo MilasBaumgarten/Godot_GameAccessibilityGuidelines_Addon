@@ -67,7 +67,7 @@ move_right={
 
 [locale]
 
-translations=PoolStringArray( "res://addons/keybindings/localisation/keybinding_menu_strings.en.translation", "res://localisation/accessiblity_information_strings.en.translation", "res://localisation/main_menu_strings.en.translation" )
+translations=PoolStringArray( "res://addons/keybindings/localisation/keybinding_menu_strings.en.translation", "res://localisation/accessiblity_information_strings.en.translation", "res://localisation/main_menu_strings.en.translation", "res://addons/subtitles/localisation/subtitle_test_strings.de.translation", "res://addons/subtitles/localisation/subtitle_test_strings.en.translation" )
 
 [physics]
 
