@@ -1,10 +1,12 @@
 id,en,de
-GAG_TITLE, Implemented Accessibility Features:, Implementierte Barrierefreiheitsmaßnahmen:
-GAG_KEYBINDING_REMAP, - the controls can be remapped, - die Tastenbelegung kann angepasst werden
-GAG_UI_CONTROL, - the UI can be controlled via mouse or keyboard, - das Userinterface kann per Maus oder Tastatur gesteuert werden
-GAG_CONTROL_SENSITIVITY, - the sensitivity of controls can be adjusted, - die Empfindlichkeit der Steuerung kann angepasst werdne
-GAG_DEFAULT_FONT, - the default font is easily readable, - die Standardschriftart ist leich lesbar
-GAG_DEFAULT_FONT_SIZE, - the default font size is chosen to be easily readable, "- die Standardschriftgröße ist so gewählt, dass sie leicht lesbar ist"
-GAG_VOLUME_CONTROLS, "- seperate volume controls are provided for effects, speech and music", "- die Lautstärke von Effekten, Sprache und Musik kann separat eingestellt werden"
-GAG_ACCESSIBILIY_INFORMATION, - information about the implemented accessibility features is provided to the user, - Nutzer*innen werden über die implementierten Barrierefreiheitsmaßnahmen informiert
-GAG_Accessibility_CONTACT, Feedback: milasbaumgarten@gmail.com, Feedback: milasbaumgarten@gmail.com
+GAG_TITLE,Implemented Accessibility Features:,Implementierte Barrierefreiheitsmaßnahmen:
+GAG_KEYBINDING_REMAP,- the controls can be remapped,- die Tastenbelegung kann angepasst werden
+GAG_UI_CONTROL,- the UI can be controlled via mouse or keyboard,- das Userinterface kann per Maus oder Tastatur gesteuert werden
+GAG_CONTROL_SENSITIVITY,- the sensitivity of controls can be adjusted,- die Empfindlichkeit der Steuerung kann angepasst werdne
+GAG_DEFAULT_FONT,- the default font is easily readable,- die Standardschriftart ist leich lesbar
+GAG_DEFAULT_FONT_SIZE,- the default font size is chosen to be easily readable,"- die Standardschriftgröße ist so gewählt, dass sie leicht lesbar ist"
+GAG_VOLUME_CONTROLS,"- seperate volume controls are provided for effects, speech and music","- die Lautstärke von Effekten, Sprache und Musik kann separat eingestellt werden"
+GAG_ACCESSIBILIY_INFORMATION,- information about the implemented accessibility features is provided to the user,- Nutzer*innen werden über die implementierten Barrierefreiheitsmaßnahmen informiert
+GAG_ACCESSIBILIY_INFORMATION_OUT_OF_GAME,- information about the implemented accessibility features is provided to the user before starting the game,"- Nutzer*innen werden über die implementierten Barrierefreiheitsmaßnahmen informiert, bevor das Spiel gestartet wird"
+GAG_SUBTITLES_IMPORTANT,- basic subtitles exist,- grundlegende Untertitel existieren
+GAG_Accessibility_CONTACT,Feedback: milasbaumgarten@gmail.com,Feedback: milasbaumgarten@gmail.com
