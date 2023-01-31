@@ -1,5 +1,7 @@
-id,en
-KEYBINDINGS_MOVE_FORWARDS, Move Forward
-KEYBINDINGS_MOVE_LEFT, Move Left
-KEYBINDINGS_MOVE_BACKWARDS, Move Backwards
-KEYBINDINGS_MOVE_RIGHT, Move Right
+id,en,de
+KEYBINDINGS_UNBOUND, Unbound, Unbelegt
+KEYBINDINGS_MOVE_FORWARDS, Move Forward, Vorwärts Gehen
+KEYBINDINGS_MOVE_LEFT, Move Left, Nach Links Gehen
+KEYBINDINGS_MOVE_BACKWARDS, Move Backwards, Zurück Gehen
+KEYBINDINGS_MOVE_RIGHT, Move Right, Nach Rechts Gehen
+KEYBINDINGS_RESET, Reset Keybindings, Tastenbelegung zurücksetzen

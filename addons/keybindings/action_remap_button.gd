@@ -9,10 +9,12 @@ func _ready():
 
 
 func _toggled(button_pressed):
+    # wait one frame, this will stop ui_accept from instandly setting the keybinding
+    yield(get_tree(), "idle_frame")
+    
     set_process_unhandled_key_input(button_pressed)
     if button_pressed:
         text = "... Key"
-        release_focus()
     else:
         display_current_key()
 
@@ -37,5 +39,8 @@ func remap_action_to(event):
 
 
 func display_current_key():
-    var current_key = InputMap.get_action_list(action)[0].as_text()
-    text = "%s Key" % current_key
+    if InputMap.get_action_list(action).size() > 0:
+        var current_key = InputMap.get_action_list(action)[0].as_text()
+        text = current_key + " Key"
+    else:
+        text = "KEYBINDINGS_UNBOUND"

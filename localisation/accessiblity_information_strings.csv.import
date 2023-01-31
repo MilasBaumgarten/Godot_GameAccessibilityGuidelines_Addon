@@ -5,10 +5,10 @@ type="Translation"
 
 [deps]
 
-files=[ "res://localisation/accessiblity_information_strings.en.translation" ]
+files=[ "res://localisation/accessiblity_information_strings.en.translation", "res://localisation/accessiblity_information_strings.de.translation" ]
 
 source_file="res://localisation/accessiblity_information_strings.csv"
-dest_files=[ "res://localisation/accessiblity_information_strings.en.translation" ]
+dest_files=[ "res://localisation/accessiblity_information_strings.en.translation", "res://localisation/accessiblity_information_strings.de.translation" ]
 
 [params]
 

@@ -27,11 +27,10 @@ config/icon="res://icon.png"
 [autoload]
 
 KeyPersistence="*res://addons/keybindings/key_persistence.gd"
-Subtitles="*res://addons/subtitles/subtitles.gd"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/keybindings/plugin.cfg", "res://addons/subtitles/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/keybindings/plugin.cfg" )
 
 [gui]
 
@@ -67,7 +66,7 @@ move_right={
 
 [locale]
 
-translations=PoolStringArray( "res://addons/keybindings/localisation/keybinding_menu_strings.en.translation", "res://localisation/accessiblity_information_strings.en.translation", "res://localisation/main_menu_strings.en.translation", "res://addons/subtitles/localisation/subtitle_test_strings.de.translation", "res://addons/subtitles/localisation/subtitle_test_strings.en.translation" )
+translations=PoolStringArray( "res://addons/keybindings/localisation/keybinding_menu_strings.en.translation", "res://localisation/accessiblity_information_strings.en.translation", "res://localisation/main_menu_strings.en.translation", "res://localisation/language_menu_strings.de.translation", "res://localisation/language_menu_strings.en.translation", "res://localisation/accessiblity_information_strings.de.translation", "res://localisation/main_menu_strings.de.translation", "res://addons/keybindings/localisation/keybinding_menu_strings.de.translation", "res://addons/keybindings/example/localisation/sensitivity_menu_strings.de.translation", "res://addons/keybindings/example/localisation/sensitivity_menu_strings.en.translation", "res://addons/audio_mixing/localisation/audio_menu_strings.de.translation", "res://addons/audio_mixing/localisation/audio_menu_strings.en.translation" )
 
 [physics]
 
