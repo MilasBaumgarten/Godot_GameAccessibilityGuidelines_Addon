@@ -7,4 +7,6 @@ GAG_DEFAULT_FONT, - the default font is easily readable
 GAG_DEFAULT_FONT_SIZE, - the default font size is chosen to be easily readable
 GAG_VOLUME_CONTROLS, "- seperate volume controls are provided for effects, speech, background and music"
 GAG_ACCESSIBILIY_INFORMATION, - information about the implemented accessibility features is provided to the user
+GAG_ACCESSIBILIY_INFORMATION_OUT_OF_GAME, - information about the implemented accessibility features is provided to the user before starting the game
+GAG_SUBTITLES_IMPORTANT, - basic subtitles exist
 GAG_Accessibility_CONTACT, Feedback: milasbaumgarten@gmail.com
