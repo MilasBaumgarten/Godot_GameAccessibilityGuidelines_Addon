@@ -21,7 +21,7 @@ func _ready():
     # connect signals
     connect("pressed", self, "_on_pressed")
     
-    # TODO: assert scene exists
+    # assert scene exists
     assert(ResourceLoader.exists(scene_path), "No scene exists at: " + scene_path + "!" +
     "\nObject: " + self.name + 
     "\nScene: " + owner.get_name())

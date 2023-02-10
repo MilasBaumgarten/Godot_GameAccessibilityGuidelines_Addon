@@ -1,10 +1,9 @@
 [gd_resource type="DynamicFont" load_steps=2 format=2]
 
-[sub_resource type="DynamicFontData" id=1]
-font_path = "res://fonts/FragmentMono-Regular.otf"
+[ext_resource path="res://fonts/FragmentMono-Regular.otf" type="DynamicFontData" id=1]
 
 [resource]
 size = 22
 extra_spacing_char = 2
 extra_spacing_space = 4
-font_data = SubResource( 1 )
+font_data = ExtResource( 1 )
