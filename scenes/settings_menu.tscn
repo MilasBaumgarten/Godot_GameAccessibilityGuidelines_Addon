@@ -25,49 +25,37 @@ grow_vertical = 2
 alignment = 1
 
 [node name="Keybindings" type="Button" parent="Panel/VBoxContainer"]
-margin_top = 228.0
-margin_right = 266.0
-margin_bottom = 261.0
+margin_top = 266.0
+margin_right = 112.0
+margin_bottom = 286.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "MENU_KEYBINDINGS"
+text = "Keybindings"
 script = ExtResource( 1 )
 scene_path = "res://scenes/keybinding_menu.tscn"
 instance_as_child = true
 
 [node name="Sensitivity" type="Button" parent="Panel/VBoxContainer"]
-margin_top = 265.0
-margin_right = 266.0
-margin_bottom = 298.0
+margin_top = 290.0
+margin_right = 112.0
+margin_bottom = 310.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "MENU_SENSITIVITY"
+text = "Sensitivity"
 script = ExtResource( 1 )
 scene_path = "res://scenes/input_sensitivity_menu.tscn"
 instance_as_child = true
 
 [node name="Audio" type="Button" parent="Panel/VBoxContainer"]
-margin_top = 302.0
-margin_right = 266.0
-margin_bottom = 335.0
+margin_top = 314.0
+margin_right = 112.0
+margin_bottom = 334.0
 grow_horizontal = 2
 grow_vertical = 2
 rect_pivot_offset = Vector2( -486, -234 )
-text = "MENU_AUDIO"
+text = "Aduio"
 script = ExtResource( 1 )
 scene_path = "res://scenes/audio_mixer_menu.tscn"
-instance_as_child = true
-
-[node name="Language" type="Button" parent="Panel/VBoxContainer"]
-margin_top = 339.0
-margin_right = 266.0
-margin_bottom = 372.0
-grow_horizontal = 2
-grow_vertical = 2
-rect_pivot_offset = Vector2( -486, -234 )
-text = "MENU_LANGUAGE"
-script = ExtResource( 1 )
-scene_path = "res://scenes/language_menu.tscn"
 instance_as_child = true
 
 [node name="ReturnButton" type="Button" parent="Panel"]
@@ -76,5 +64,5 @@ anchor_right = 1.0
 margin_left = -128.0
 margin_bottom = 34.0
 grow_horizontal = 0
-text = "MENU_RETURN"
+text = "Return"
 script = ExtResource( 2 )

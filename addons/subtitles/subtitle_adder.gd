@@ -1,6 +1,6 @@
 extends Button
 
-export (String) var content_identifier_string
+export (String, MULTILINE) var content_string
 export (float) var duration = 2.0
 
 
@@ -9,4 +9,4 @@ func _ready():
 
 
 func _on_button_pressed():
-    Subtitles.add_to_queue(tr(content_identifier_string), duration)
+    Subtitles.add_to_queue(content_string, duration)

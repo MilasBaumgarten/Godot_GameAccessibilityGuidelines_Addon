@@ -28,32 +28,32 @@ alignment = 1
 
 [node name="Start Game" type="Button" parent="Panel/VBoxContainer"]
 margin_top = 260.0
-margin_right = 249.0
+margin_right = 221.0
 margin_bottom = 280.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "MENU_START_GAME"
+text = "Start Game"
 script = ExtResource( 2 )
 scene_path = "res://game.tscn"
 
 [node name="Settings" type="Button" parent="Panel/VBoxContainer"]
 margin_top = 290.0
-margin_right = 249.0
+margin_right = 221.0
 margin_bottom = 310.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "MENU_SETTINGS"
+text = "Settings"
 script = ExtResource( 2 )
 scene_path = "res://scenes/settings_menu.tscn"
 instance_as_child = true
 
 [node name="Accessibility Information" type="Button" parent="Panel/VBoxContainer"]
 margin_top = 320.0
-margin_right = 249.0
+margin_right = 221.0
 margin_bottom = 340.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "MENU_ACCESSIBILITY_INFORMATION"
+text = "Accessibility Information"
 script = ExtResource( 2 )
 scene_path = "res://scenes/accessibility_information.tscn"
 instance_as_child = true

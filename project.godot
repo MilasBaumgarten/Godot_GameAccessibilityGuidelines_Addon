@@ -46,7 +46,7 @@ ui_end={
 
 [locale]
 
-translations=PoolStringArray( "res://addons/keybindings/localisation/keybinding_menu_strings.en.translation", "res://localisation/accessiblity_information_strings.en.translation", "res://localisation/main_menu_strings.en.translation", "res://localisation/language_menu_strings.de.translation", "res://localisation/language_menu_strings.en.translation", "res://localisation/accessiblity_information_strings.de.translation", "res://localisation/main_menu_strings.de.translation", "res://addons/keybindings/localisation/keybinding_menu_strings.de.translation", "res://addons/keybindings/example/localisation/sensitivity_menu_strings.de.translation", "res://addons/keybindings/example/localisation/sensitivity_menu_strings.en.translation", "res://addons/audio_mixing/localisation/audio_menu_strings.de.translation", "res://addons/audio_mixing/localisation/audio_menu_strings.en.translation" )
+translations=PoolStringArray(  )
 
 [physics]
 

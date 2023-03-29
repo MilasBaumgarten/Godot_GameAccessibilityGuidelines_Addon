@@ -6,7 +6,7 @@ var subtitle_label: Label
 
 var queue_text = PoolStringArray()
 var queue_duration = PoolRealArray()
-var queue_size = 4
+var queue_size = 50
 var queue_index_current = 0
 var queue_index_last_element = 0
 

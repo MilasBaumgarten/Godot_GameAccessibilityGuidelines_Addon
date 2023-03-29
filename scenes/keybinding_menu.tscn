@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://addons/keybindings/action_remap_button.gd" type="Script" id=1]
 [ext_resource path="res://scripts/return_from_instanced_scene.gd" type="Script" id=2]
-[ext_resource path="res://addons/ui_keyboard_navigation/other_grab_focus.gd" type="Script" id=3]
 [ext_resource path="res://addons/keybindings/reset_keybindings.gd" type="Script" id=4]
 
 [node name="KeybindingMenu" type="Control"]
@@ -62,7 +61,7 @@ margin_left = -12.0
 margin_top = -33.0
 grow_horizontal = 0
 action_mode = 0
-text = "KEYBINDINGS_RESET"
+text = "Reset"
 script = ExtResource( 4 )
 
 [node name="ReturnButton" type="Button" parent="."]
@@ -71,9 +70,5 @@ anchor_right = 1.0
 margin_left = -128.0
 margin_bottom = 34.0
 grow_horizontal = 0
-text = "MENU_RETURN"
+text = "Return"
 script = ExtResource( 2 )
-
-[node name="Node" type="Node" parent="ReturnButton"]
-script = ExtResource( 3 )
-ui_element_path = NodePath("..")

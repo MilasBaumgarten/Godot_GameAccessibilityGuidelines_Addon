@@ -11,8 +11,8 @@ grow_vertical = 0
 
 [node name="Label" type="Label" parent="PanelContainer"]
 margin_left = 7.0
-margin_top = 7.0
+margin_top = 13.0
 margin_right = 1017.0
-margin_bottom = 34.0
+margin_bottom = 27.0
 grow_vertical = 0
 autowrap = true
